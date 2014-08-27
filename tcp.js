@@ -1,5 +1,7 @@
-// > nc localhost 1337
-// > echo $'zebra\naardavark\nzebra\ntiger' | nc localhost 1337
+// > ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -f 2
+
+// > nc <IP_ADDRESS> 1337
+// > echo $'zebra\naardavark\nzebra\ntiger' | nc <IP_ADDRESS> 1337
 
 var net = require('net')
   , path = require('path')
