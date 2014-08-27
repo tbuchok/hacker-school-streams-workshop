@@ -1,7 +1,9 @@
 // > ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -f 2
 // > node tcp.js
-// > nc <IP_ADDRESS> 1337
-// > echo $'zebra\naardavark\nzebra\ntiger' | nc <IP_ADDRESS> 1337
+// ECHO:
+// > nc IP_ADDRESS 1337
+// PIPING:
+// > echo $'zebra\naardavark\nzebra\ntiger' | nc IP_ADDRESS 1337
 
 var net = require('net')
   , path = require('path')
